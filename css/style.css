@@ -1,0 +1,35 @@
+/* Custom stijlen buiten Tailwind */
+
+/* Actieve filterknop stijl */
+.filter-btn.active {
+    background-color: #202020;
+    color: white;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animaties voor pagina-overgangen */
+.page-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Lightbox aanpassingen */
+.sl-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.sl-wrapper .sl-close {
+    color: white;
+}
+
+.sl-wrapper .sl-navigation button {
+    color: white;
+}
+
+/* Mobiel menu animatie */
+#mobile-menu.open {
+    transform: translateY(0);
+}

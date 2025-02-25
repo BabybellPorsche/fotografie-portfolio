@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download gratis iPhone wallpapers van Samuel Ketels Fotografie, perfect formaat voor je mobiele toestel.">
     <title>iPhone Wallpapers | Samuel Ketels Fotografie</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Tailwind configuratie -->
     <script>
         tailwind.config = {
@@ -14,42 +27,86 @@
                     colors: {
                         primary: '#202020',
                         accent: '#909090'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
         }
     </script>
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css">
 </head>
 <body class="bg-white text-primary">
-    <!-- Sidebar Navigation (voor desktop) -->
-    <nav class="fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 hidden md:block p-6">
+    <!-- Sidebar Navigation (desktop) -->
+    <nav class="sidebar fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 hidden md:flex md:flex-col p-6 z-30">
         <div class="flex flex-col h-full">
-            <div class="pb-6">
-                <h1 class="text-2xl font-semibold">Samuel Ketels</h1>
-                <p class="text-sm text-gray-500">Fotografie</p>
+            <div class="pb-8">
+                <h1 class="text-2xl font-semibold header-title animate-fade-in">Samuel Ketels</h1>
+                <p class="text-sm text-gray-500 animate-fade-in">Fotografie</p>
             </div>
             
-            <ul class="space-y-4 flex-grow">
-                <li><a href="../index.html" class="hover:text-accent">Home</a></li>
-                <li><a href="about.html" class="hover:text-accent">Over mij</a></li>
-                <li><a href="fujifilm.html" class="hover:text-accent">Fujifilm Simulaties</a></li>
-                <li><a href="iphone.html" class="hover:text-accent font-medium">iPhone Wallpapers</a></li>
+            <ul class="space-y-5 flex-grow animate-fade-in">
+                <li><a href="../index.html" class="nav-link hover:text-accent">Home</a></li>
+                <li><a href="about.html" class="nav-link hover:text-accent">Over mij</a></li>
+                <li><a href="fujifilm.html" class="nav-link hover:text-accent">Fujifilm Simulaties</a></li>
+                <li><a href="iphone.html" class="nav-link hover:text-accent">iPhone Wallpapers</a></li>
             </ul>
             
-            <div class="pt-6">
+            <div class="pt-6 border-t border-gray-100 animate-fade-in">
                 <div class="flex space-x-4 items-center">
-                    <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-accent">
+                    <a href="https://instagram.com/yourusername" target="_blank" class="icon hover:text-accent transition-colors" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-                    <a href="mailto:samuel.ketels@gmail.com" class="hover:text-accent">
+                    <a href="mailto:samuel.ketels@gmail.com" class="icon hover:text-accent transition-colors" aria-label="Email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobiele navigatie -->
+    <nav class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 p-4 md:hidden z-40 shadow-sm">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl font-semibold header-title">Samuel Ketels</h1>
+            <button id="mobile-menu-button" class="text-primary p-1" aria-label="Menu">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobiel menu overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-30 flex flex-col p-6 pt-20 transform -translate-y-full transition-transform duration-300 md:hidden">
+        <ul class="space-y-6 text-lg">
+            <li><a href="../index.html" class="block py-2 nav-link">Home</a></li>
+            <li><a href="about.html" class="block py-2 nav-link">Over mij</a></li>
+            <li><a href="fujifilm.html" class="block py-2 nav-link">Fujifilm Simulaties</a></li>
+            <li><a href="iphone.html" class="block py-2 nav-link">iPhone Wallpapers</a></li>
+        </ul>
+        <div class="mt-auto pt-8 border-t border-gray-200">
+            <div class="flex space-x-6 items-center">
+                <a href="https://instagram.com/yourusername" target="_blank" class="icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="mailto:samuel.ketels@gmail.com" class="icon" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                 </a>
             </div>
@@ -57,83 +114,134 @@
     </div>
 
     <!-- Hoofdinhoud -->
-    <main class="md:ml-64 pt-16 md:pt-0 px-4 md:px-8 py-6">
-        <div class="mb-8">
-            <h2 class="text-2xl font-medium mb-4">iPhone Wallpapers</h2>
-            
-            <p class="mb-6">Hier vind je een verzameling van mijn foto's die perfect zijn als achtergrond voor je iPhone. Druk op een afbeelding om deze in volledig formaat te bekijken, dan kun je deze opslaan op je telefoon.</p>
+    <main class="md:ml-64 pt-16 md:pt-0 px-4 sm:px-6 md:px-8 py-8 min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <header class="mb-10 animate-fade-in">
+                <h2 class="text-3xl font-medium mb-4 section-title">iPhone Wallpapers</h2>
+                <p class="text-gray-600 max-w-2xl">Hier vind je een verzameling van mijn foto's die perfect zijn als achtergrond voor je iPhone. Druk op een afbeelding om deze in volledig formaat te bekijken, dan kun je deze opslaan op je telefoon.</p>
+            </header>
             
             <!-- Categoriefilters -->
-            <div class="flex flex-wrap gap-2 mb-6">
-                <button class="filter-btn active px-3 py-1 text-sm rounded-full bg-primary text-white" data-filter="*">Alle</button>
-                <button class="filter-btn px-3 py-1 text-sm rounded-full bg-gray-200" data-filter="dark">Donker</button>
-                <button class="filter-btn px-3 py-1 text-sm rounded-full bg-gray-200" data-filter="light">Licht</button>
-                <button class="filter-btn px-3 py-1 text-sm rounded-full bg-gray-200" data-filter="minimal">Minimalistisch</button>
+            <div class="filter-controls animate-fade-in mb-8">
+                <button class="filter-btn active" data-filter="*">Alle</button>
+                <button class="filter-btn" data-filter="dark">Donker</button>
+                <button class="filter-btn" data-filter="light">Licht</button>
+                <button class="filter-btn" data-filter="minimal">Minimalistisch</button>
             </div>
             
             <!-- Wallpaper grid -->
-            <div class="grid-container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Voorbeeldwallpapers -->
-                <div class="grid-item dark" data-category="dark">
-                    <a href="../images/placeholder1.jpg" class="gallery-item block overflow-hidden rounded-lg">
-                        <img src="../images/placeholder1.jpg" alt="Donkere wallpaper 1" class="w-full h-auto object-cover aspect-[9/16] transform hover:scale-105 transition-transform duration-300">
+            <div class="photo-grid" style="opacity: 0; transition: opacity 0.4s ease;">
+                <!-- Voorbeeldwallpapers met 9/16 aspect ratio -->
+                <div class="grid-item dark wallpaper-item" data-category="dark">
+                    <a href="../images/placeholder1.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Donker</span>
+                        <img src="../images/placeholder1.jpg" alt="Donkere wallpaper 1" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Midnight Blues</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • Classic Chrome</p>
+                        </div>
                     </a>
                 </div>
-                <div class="grid-item light" data-category="light">
-                    <a href="../images/placeholder2.jpg" class="gallery-item block overflow-hidden rounded-lg">
-                        <img src="../images/placeholder2.jpg" alt="Lichte wallpaper 1" class="w-full h-auto object-cover aspect-[9/16] transform hover:scale-105 transition-transform duration-300">
+                
+                <div class="grid-item light wallpaper-item" data-category="light">
+                    <a href="../images/placeholder2.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Licht</span>
+                        <img src="../images/placeholder2.jpg" alt="Lichte wallpaper 1" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Morning Haze</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • ProNeg Hi</p>
+                        </div>
                     </a>
                 </div>
-                <!-- Hier komen meer wallpapers -->
+                
+                <div class="grid-item minimal wallpaper-item" data-category="minimal">
+                    <a href="../images/placeholder1.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Minimalistisch</span>
+                        <img src="../images/placeholder1.jpg" alt="Minimalistische wallpaper" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Minimalist Lines</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • Acros</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="grid-item dark wallpaper-item" data-category="dark">
+                    <a href="../images/placeholder2.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Donker</span>
+                        <img src="../images/placeholder2.jpg" alt="Donkere wallpaper 2" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Urban Nights</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • Classic Neg</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="grid-item light wallpaper-item" data-category="light">
+                    <a href="../images/placeholder1.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Licht</span>
+                        <img src="../images/placeholder1.jpg" alt="Lichte wallpaper 2" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Soft Textures</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • Eterna</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="grid-item minimal wallpaper-item" data-category="minimal">
+                    <a href="../images/placeholder2.jpg" class="gallery-item block overflow-hidden">
+                        <span class="category-tag">Minimalistisch</span>
+                        <img src="../images/placeholder2.jpg" alt="Minimalistische wallpaper 2" class="loading aspect-[9/16] object-cover">
+                        <div class="item-info">
+                            <h3 class="font-medium text-lg">Abstract Flow</h3>
+                            <p class="text-sm opacity-80">Fujifilm X-T4 • Classic Chrome</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             
-            <div class="mt-8 p-4 bg-gray-100 rounded-lg">
-                <h3 class="text-lg font-medium mb-2">Wallpapers gebruiken</h3>
-                <p>Tik op een afbeelding om deze in volledig formaat te bekijken, houd vervolgens ingedrukt om op te slaan op je iPhone. Ga dan naar Instellingen > Achtergrond om deze in te stellen als je achtergrond.</p>
+            <div class="mt-12 p-6 bg-gray-50 rounded-lg shadow-sm animate-fade-in">
+                <h3 class="text-lg font-medium mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Wallpapers gebruiken
+                </h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Zo kun je deze wallpapers gebruiken op je iPhone:</p>
+                    
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li>Tik op een afbeelding om deze in volledig formaat te bekijken</li>
+                        <li>Houd de afbeelding ingedrukt en kies "Afbeelding opslaan"</li>
+                        <li>Ga naar Instellingen &gt; Achtergrond &gt; Kies nieuwe achtergrond</li>
+                        <li>Selecteer de foto uit je galerij</li>
+                        <li>Pas de positionering aan en kies waar je de wallpaper wilt gebruiken (vergrendelscherm, beginscherm of beide)</li>
+                    </ol>
+                    
+                    <p class="pt-2">Alle wallpapers zijn geoptimaliseerd voor iPhone-schermen en hebben de juiste verhoudingen voor een perfecte weergave.</p>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="../js/main.js"></script>
-</body>
-</html> 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    <!-- Footer -->
+    <footer class="px-4 sm:px-6 md:px-8 py-6 md:ml-64 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500">&copy; 2025 Samuel Ketels. Alle rechten voorbehouden.</p>
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <a href="https://instagram.com/yourusername" target="_blank" class="text-gray-500 hover:text-primary transition-colors" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
                 </div>
             </div>
         </div>
-    </nav>
+    </footer>
 
-    <!-- Mobiele navigatie (alleen zichtbaar op kleine schermen) -->
-    <nav class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 p-4 md:hidden z-20">
-        <div class="flex justify-between items-center">
-            <h1 class="text-xl font-semibold">Samuel Ketels</h1>
-            <button id="mobile-menu-button" class="text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobiel menu (verschijnt als overlay) -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-10 flex flex-col p-6 pt-20 transform -translate-y-full transition-transform duration-300 md:hidden">
-        <ul class="space-y-4">
-            <li><a href="../index.html" class="block py-2">Home</a></li>
-            <li><a href="about.html" class="block py-2">Over mij</a></li>
-            <li><a href="fujifilm.html" class="block py-2">Fujifilm Simulaties</a></li>
-            <li><a href="iphone.html" class="block py-2 font-medium">iPhone Wallpapers</a></li>
-        </ul>
-        <div class="mt-6 pt-6 border-t border-gray-200">
-            <div class="flex space-x-4 items-center">
-                <a href="https://instagram.com/yourusername" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                </a>
-                <a href="mailto:samuel.ketels@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
